@@ -1,0 +1,103 @@
+lenis torvald github discovery.
+Install git:-
+1.git version
+2.Handling repository:-
+-------------
+3. GitHub account creation.
+----------
+4. gitHub and gitLAB
+A. HAVING ONE emailId from creation of github account.
+-------------
+5. Configure git.
+a. link git(local command line tool) to github(website). for that go to gitbash
+open gitbash and type
+git config  types --global(recommended),(.git file having personal information)
+                  --system,(system user information)
+                  --local(repository information in .git folder)
+
+b.type this git config --global  in git bash. or(we are giving user dettails)
+git config --global -e command for edit file and see that file
+back command :q then enter for coming back.
+
+c.$ common in, git config --global user.name "Ramu"
+d. git config --global -e for editing.
+e. git config --global user.email "ramu@...gmail.com" same as github account email.
+communication between git and github.
+
+for all lists git config --list. to see usernmae and email in this command.
+-----------------
+6.how to check information of command(Help commands).
+a git help --to see and all commands and information.
+
+7. git clone <url of git>
+8. git cone <url of git> <pre-name> means alias name for git project.
+
+
+9. git push :---
+* git init
+* git add read.me
+git commit -m ""
+git add origin
+
+
+Branching in git important:-
+with new folder.
+git init added.
+master  is main branch in repository.It is a land for example.
+Feature branches are small braches in master branch. (working branch).
+Branch is a pointer:-
+git log --oneline all commits in single line
+git log --pretty=full give high level information.
+---------------------------------
+create a branch:-******************88
+master is also main branch.
+Head-> master,sideMenu
+we can create new braches separetely.
+1)git branch branch-name
+head is used for in which branch we are there it is very useful in which branch we are present.
+2) how to switch to our new branch:-  ex switched to new branch from master branch.
+ * git checkout <branch-name>
+ after this
+ Head -> sideMenu(branch),master  (using git log --oneline)
+3)now head pointout to new branch only presently we are in new branch pointer right.
+4) now everything files modified goes to new branch only not in master because it is pointcut new branch.
+  ------------------
+git checkout is used to shift one branch to another branch this command is useful.
+
+git checkout master to move to master from our new branch.
+
+now head pointout to master now.
+-------------------------------------------------------------
+ to see all branches information use log
+
+ git log --oneline --all(It will give every branch logs information).           or git log --oneline --graph --all
+ ----------------------------------------------------------------
+ git checkout -b branch-name -- it will create branch and switch to that new branch. from master  int single command
+ -----------------------------------
+ how to merge changes in master from new branch:-
+ Merging:----- **************
+ new steps to merge with master:-
+ 1. git checkout master
+ 2. git merge email-fix (new branch created name is email-fix) changes in email-fix merged to master. by this command.
+fast-forward merge it is.
+git log --oneline --graph --all
+
+Delete a branch:-
+git branch -d <branch-name>
+-----------------------------------------
+merge made by recursive stragegy:- another type.
+----------------------------------------
+merge conflicts.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
