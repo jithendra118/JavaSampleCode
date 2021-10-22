@@ -1,0 +1,28 @@
+@Builder
+public class Person {
+    private String name;
+    private String address;
+    private String secondAddress;
+}
+
+PersonBuilder.builder().name("yourName").address("your Address").build();
+
+
+
+
+@AllArgsConstructor(access = AccessLevel.PRIVATE) // required, see https://stackoverflow.com/questions/51122400/why-is-lombok-builder-not-compatible-with-this-constructor
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+@Builder
+@Getter
+public class User {
+    private String id;
+    private String name;
+    private int age;
+
+    public static UserBuilder builder(final String id) {
+        return new UserBuilder().id(id);
+    }
+}
+You can only initialize a User instance by builder like User user = User.builder("id-123").name("Tom").build;.
+ With private no args constructer, you are not able to User user = new User(); or User user = new User("id-123");
+ so you always need to pass the required parameter id. Please note the initialized instance is immutable.

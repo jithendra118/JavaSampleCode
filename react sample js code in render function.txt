@@ -1,0 +1,56 @@
+  handleSubmit(e) {
+        fakeAuth.authenticate(() => {
+            this.setState({
+                portalId: this.refs.portalId.value,
+                password: this.refs.password.value,
+                redirectToReferrer: true
+            })
+        })
+        e.preventDefault();
+    }
+
+
+    render() {
+        const redirectToReferrer = this.state.redirectToReferrer;
+        if (redirectToReferrer === true) {
+            <Redirect to="/home" />
+        }
+
+
+
+
+
+history.push({pathname: 'yourlocation', state: { data: your data}})
+And you can accesss that data in the other component using
+
+this.props.history.location.state
+
+
+-----------------
+
+ if (submitted) {
+    return <Redirect push to={{
+      pathname: '/result',
+      state: {data: data.toString()}
+    }}
+    />
+  }   
+  return (
+  <div>
+    <h1></h1>
+    <form onSubmit={handleSubmit}>
+        <label>
+          <input name="content" type="text" {...bindContent} />
+        </label>
+        <br />
+        <input type="submit" value="Submit" />
+        </form>
+  </div>
+  );
+}
+
+function Result() {
+  const location = useLocation()
+  console.log(location)
+return <h2>Result {location.state.data}</h2>
+}

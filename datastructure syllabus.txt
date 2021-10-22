@@ -1,0 +1,59 @@
+Data Structures
+Chapter 1 I Arrays and Strings
+HashTables.
+ArrayList & Resizable Arrays
+StringBuilder.
+ 
+Chapter 2 I Linked Lists
+Creating a Linked List
+Deleting a Node from a Singly Linked List
+The "Runner" Technique
+Recursive Problems
+ 
+Chapter 3 | Stacks and Queues
+Implementing a Stack
+Implementing a Queue
+ 
+Chapter 4 | Trees and Graphs
+Types of Trees
+Binary Tree Traversal
+Binary Heaps (Min-Heaps and Mox-Heaps)
+Tries (Prefix Trees)
+Graphs
+Graph Search
+Algorithms
+Chapter 5 | Bit Manipulation
+Bit Manipulation By Hand
+Bit Facts and Tricks
+Two's Complement and Negative Numbers
+Arithmetic vs. Logical Right Shift
+Common Bit Tasks: Getting and Setting
+ 
+Chapter 6 | Math and Logic Puzzles
+Prime Numbers
+Probability
+Develop Rules and Patterns
+Worst Case Shifting
+ 
+Chapter 7 | Object-Oriented Design
+ 
+Chapter 8 | Recursion and Dynamic Programming
+Recursive vs. Iterative Solutions
+Dynamic Programming & Memoization
+ 
+Chapter 9 I System Design and Scalability
+ 
+Chapter 10 | Sorting and Searching
+Sorting
+Bubble
+Selection
+merge
+quick
+Bucket
+radix
+Searching
+Linear
+Binary
+Jump
+Interpolation
+Exponential

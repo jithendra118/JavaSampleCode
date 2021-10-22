@@ -1,0 +1,24 @@
+public static List<LocalDate> getDatesRangeJava8(LocalDate startDate, LocalDate endDate) {
+    int numOfDays = (int) ChronoUnit.DAYS.between(startDate, endDate);
+    return IntStream.range(0, numOfDays)
+            .mapToObj(startDate::plusDays)
+            .collect(Collectors.toList());
+}
+
+public static List<LocalDate> getDatesRangeJava9(LocalDate startDate, LocalDate endDate) {
+    return startDate.datesUntil(endDate).collect(Collectors.toList());
+}
+
+
+--------------
+    LocalDate start = LocalDate.now();
+    LocalDate end = LocalDate.of(2016, 9, 1);//JAVA 9 release date
+    Long duration = start.until(end, ChronoUnit.DAYS);
+    System.out.println(duration);
+     // Do Any stuff Here there after
+    IntStream.iterate(0, i -> i + 1)
+             .limit(duration)
+             .forEach((i) -> {});
+     //old way of iteration
+    for (int i = 0; i < duration; i++)
+     System.out.print("" + i);// Do Any stuff Here

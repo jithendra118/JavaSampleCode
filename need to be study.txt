@@ -1,0 +1,9 @@
+Java 8 
+microservices algorithm()
+unit test cases mokito
+coding standards
+git
+deployment(dockers,jenkins,kubernities in azure or aws)
+data structures and algorithm
+react js
+mah

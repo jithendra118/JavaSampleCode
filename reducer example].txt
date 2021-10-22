@@ -1,0 +1,38 @@
+/ Create instance
+  let instance = axios.create(defaultOptions);
+
+  // Set the AUTH token for any request
+  instance.interceptors.request.use(function (config) {
+    const token = localStorage.getItem('token');
+    config.headers.Authorization =  token ? `Bearer ${token}` : '';
+    return config;
+  });
+
+
+
+
+
+
+
+const [state, dispatch] = useReducer(reducer, people)
+disptach method on button click call reducer method having action.type
+state relates to people.
+
+const reducer = (people, action) => {
+  if(action.type == 'chomp') {
+    return people.map(person => {
+      if(person.name == action.payload) {
+        person.alive = false;
+      }
+      return person;
+    })
+  }
+  if(action.type == 'revive') {
+    return people.map(person => {
+      if(person.name == action.payload) {
+        person.alive = true;
+      }
+      return person;
+    })
+  }
+}
